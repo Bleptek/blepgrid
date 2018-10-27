@@ -1,0 +1,101 @@
+// =============================================================================
+// GRID
+// =============================================================================
+// For support of old browsers
+
+* {
+  box-sizing: border-box;
+}
+
+$grid-sm: 540px;
+$grid-md: 720px;
+$grid-lg: 960px;
+$grid-xl: 1140px;
+
+$gutter: .5em;
+
+$grid-values: (
+  "1-1": 1/1,
+  "1-2": 1/2,
+  "1-3": 1/3,
+  "1-4": 1/4,
+  "1-5": 1/5,
+  "1-6": 1/6,
+  "1-7": 1/7,
+  "1-8": 1/8,
+  "1-9": 1/9
+);
+
+@mixin clearfix() {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+.grid {
+  @include clearfix;
+  padding: 0 $gutter;
+
+  @each $property, $value in $grid-values {
+    .col-#{$property} {
+      float: left;
+      width: percentage($value);
+      padding: $gutter;
+    }
+  }
+
+  @each $property, $value in $grid-values {
+    .col-xs-#{$property} {
+      float: left;
+      width: percentage($value);
+      padding: $gutter;
+    }
+  }
+
+  @media (min-width: $grid-sm) {
+    @each $property, $value in $grid-values {
+      .col-sm-#{$property} {
+        float: left;
+        width: percentage($value);
+        padding: $gutter;
+      }
+    }
+  }
+
+  @media (min-width: $grid-md) {
+    @each $property, $value in $grid-values {
+      .col-md-#{$property} {
+        float: left;
+        width: percentage($value);
+        padding: $gutter;
+      }
+    }
+  }
+
+  @media (min-width: $grid-lg) {
+    @each $property, $value in $grid-values {
+      .col-lg-#{$property} {
+        float: left;
+        width: percentage($value);
+        padding: $gutter;
+      }
+    }
+  }
+
+  @media (min-width: $grid-xl) {
+    @each $property, $value in $grid-values {
+      .col-xl-#{$property} {
+        float: left;
+        width: percentage($value);
+        padding: $gutter;
+      }
+    }
+  }
+
+  .module {
+    display: block;
+    padding: $gutter;
+  }
+}

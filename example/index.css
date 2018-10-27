@@ -1,17 +1,42 @@
 body {
-   margin: 0;
-   height: 100vh;
-   background-color: white;
-}
-
-.module {
-    border: 1px solid lightgray;
-    color: black;
-    text-align: center;
+    height: 100vh;
+    background-color: white;
 
     font-family: sans-serif;
-    font-size: 1em;
-    font-weight: 700;
+    padding: 2em 0;
+}
 
-    letter-spacing: 2px;
+h1 {
+    font-size: 5em;
+    font-weight: 900;
+    margin: .5em 0;
+}
+
+p {
+    font-size: 1em;
+    margin: .5em 0;
+}
+
+.example {
+    min-height: 10em;
+
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+
+.gray {
+    background-color: gray;
+}
+
+.tomato {
+    background-color: tomato;
+}
+
+.white-smoke {
+    background-color: whitesmoke;
+}
+
+.black {
+    background-color: black;
 }

@@ -1,6 +1,6 @@
 {
   "name": "@bleptek/blepgrid",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This is a package for setting up a grid on a website.",
   "main": "main.css",
   "directories": {

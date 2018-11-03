@@ -1,4 +1,4 @@
-# blepgrid
+# Granny Grid
 
 These are commands to compile `.scss` to `.css` and minify the file. At some point, we should set up Webpack.
 

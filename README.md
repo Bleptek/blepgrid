@@ -1,6 +1,6 @@
 # Granny Grid
 
-This is a grid for support of old browsers 👵
+This is a grid for support of old browsers 👵🏻
 
 ## Usage
 

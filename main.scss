@@ -44,7 +44,7 @@ $grid-values: (
   padding: 0 $gutter;
 
   @each $property, $value in $grid-values {
-    &.col-#{$property} {
+    .col-#{$property} {
       float: left;
       width: percentage($value);
       padding: $gutter;

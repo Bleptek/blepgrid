@@ -4,6 +4,22 @@ This is a grid for support of old browsers 👵
 
 ## Usage
 
+```html
+<section class="granny">
+    <div class="col-xs-1-2 col-sm-1-4">
+        <div class="module"></div>
+    </div>
+    <div class="col-xs-1-2 col-sm-1-4">
+        <div class="module"></div>
+    </div>
+    <div class="col-xs-1-2 col-sm-1-4">
+        <div class="module"></div>
+    </div>
+    <div class="col-xs-1-2 col-sm-1-4">
+        <div class="module"></div>
+    </div>
+</section>
+```
 
 ## Compile CSS
 

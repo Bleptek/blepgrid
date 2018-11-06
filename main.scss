@@ -1,5 +1,5 @@
 // =============================================================================
-// GRID
+// GRANNY GRID
 // =============================================================================
 // For support of old browsers
 
@@ -39,12 +39,12 @@ $grid-values: (
   }
 }
 
-.grid {
+.granny {
   @include clearfix;
   padding: 0 $gutter;
 
   @each $property, $value in $grid-values {
-    .col-#{$property} {
+    &.col-#{$property} {
       float: left;
       width: percentage($value);
       padding: $gutter;
